@@ -23,4 +23,9 @@ describe('Fixnum#pingpong') do
   it('Returns an array with all numbers divisible by 5 replaced back by "pong" also') do
     expect(5.pingpong()).to(eq([1, 2, 'ping', 4, 'pong']))
   end
+
+  it ('Returns an array with multiples of 3 and 5 (15) replaced with "pingpong."') do
+    expect(15.pingpong()).to(eq([1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'pingpong']))
+  end
+
 end
